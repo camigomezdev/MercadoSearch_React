@@ -3,7 +3,7 @@ import { Icon, Card, Image, Label } from 'semantic-ui-react'
 
 const Item = ({ title, img, price, statusSeller, sold }) => (
     <Card>
-      <Image centered='true' fluid='true' src={img} as='a' size='small'/>
+      <Image centered src={img} as='a' size='small'/>
       <Card.Content>
         <Card.Header>{title}</Card.Header>
         <Card.Meta> <Label as='a'>${price}</Label></Card.Meta>
