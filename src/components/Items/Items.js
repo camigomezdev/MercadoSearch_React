@@ -1,10 +1,10 @@
 import React from 'react'
 import Item from '../Item/Item';
-import { Card, Grid } from 'semantic-ui-react'
+import { Card } from 'semantic-ui-react'
 
 const Items = ({ items }) => {
     return(
-        <Card.Group stackable centered>
+        <Card.Group stackable>
             {items.map(item =>
                 <Item
                     key = {item.id}
