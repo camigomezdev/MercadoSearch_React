@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from './Item';
+import Item from '../Item/Item';
 import { Card, Grid } from 'semantic-ui-react'
 
 const Items = ({ items }) => {

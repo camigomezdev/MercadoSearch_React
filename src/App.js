@@ -7,7 +7,7 @@ import { Dropdown, Icon, Menu, Segment } from 'semantic-ui-react'
 
 import logo from './logo.svg';
 import './App.css';
-import Items from './components/Items'
+import Items from './components/Items/Items'
 
 const url = 'https://api.mercadolibre.com/sites/MCO/'
 
@@ -44,20 +44,20 @@ class App extends Component {
     return (
         <div>
           <Menu attached='top' inverted color="teal">
-            <Container>
-                <h1 className="App-color-text"> <i className='shopping basket icon'/> Mercado Libre Search @camigomez35</h1>
-            </Container>
+              <Container>
+                  <h1 className="App-color-text"> <i className='shopping basket icon'/> Mercado Libre Search @camigomez35</h1>
+              </Container>
 
-            <Menu.Menu position='right'>
-              <div className='ui right aligned category search item'>
-                <div className='ui icon input'>
-                <input type='text' placeholder='Search...'
-                  value={this.state.inputTexto} onChange={this.getData}/>
-                  <i className='search link icon'/>
+              <Menu.Menu position='right'>
+                <div className='ui right aligned category search item'>
+                  <div className='ui icon input'>
+                  <input type='text' placeholder='Search...'
+                    value={this.state.inputTexto} onChange={this.getData}/>
+                    <i className='search link icon'/>
+                  </div>
+                  <div className='results'/>
                 </div>
-                <div className='results'/>
-              </div>
-            </Menu.Menu>
+              </Menu.Menu>
           </Menu>
 
           <Container textAlign='center'>
