@@ -2,6 +2,7 @@
   "name": "mercado-search-react",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://camigomez35.github.io/MercadoSearch_React",
   "dependencies": {
     "aphrodite": "^1.2.4",
     "axios": "^0.16.2",
